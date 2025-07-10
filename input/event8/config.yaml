@@ -1,0 +1,33 @@
+device: cuda
+
+event: event8
+
+entity: 4
+prompt: a skeleton, a spiderman, a monkey, a book
+entity_mask_to_tokens:
+- - 2
+- - 5
+- - 8
+- - 11
+entity_token_weights:
+- - 2
+- - 3
+- - 2
+- - 2
+
+
+fe_attn_t: 0.6
+fe_f_t: 0.8
+fe_cross_attn_reg_t: 1
+fe_cross_attn_guid_t: 0.2
+
+guidance_scale: 15
+n_timesteps: 50
+negative_prompt: ugly, blurry, black, low res, unrealistic, bad hand, bad feet, multiple
+  hand
+sd_version: '2.1'
+seed: 19
+
+output_path: output
+
+

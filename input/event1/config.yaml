@@ -1,0 +1,26 @@
+device: cuda
+
+event: event1
+
+entity: 2
+prompt: a spiderman, a batman, cartoon
+entity_mask_to_tokens:
+- - 2
+- - 5
+entity_token_weights:
+- - 1
+- - 1
+
+fe_attn_t: 0.8
+fe_f_t: 1
+fe_cross_attn_reg_t: 1
+fe_cross_attn_guid_t: 0.2
+
+guidance_scale: 20
+n_timesteps: 50
+negative_prompt: ugly, blurry, black, low res, unrealistic, bad hand, bad feet, multiple
+  hand
+sd_version: '2.1'
+seed: 18
+
+output_path: output

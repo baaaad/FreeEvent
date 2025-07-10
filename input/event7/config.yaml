@@ -1,0 +1,31 @@
+device: cuda
+
+event: event7
+
+entity: 3
+prompt: a batman, a wolf, a bear
+entity_mask_to_tokens:
+- - 2
+- - 5
+- - 8
+entity_token_weights:
+- - 2
+- - 2
+- - 2
+
+
+fe_attn_t: 0.5
+fe_f_t: 1
+fe_cross_attn_reg_t: 1
+fe_cross_attn_guid_t: 0.2
+
+guidance_scale: 15
+n_timesteps: 50
+negative_prompt: ugly, blurry, black, low res, unrealistic, bad hand, bad feet, multiple
+  hand
+sd_version: '2.1'
+seed: 13
+
+output_path: output
+
+

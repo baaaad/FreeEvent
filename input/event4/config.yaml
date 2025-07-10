@@ -1,0 +1,32 @@
+device: cuda
+
+event: event4
+
+entity: 3
+prompt: a bear, a fox, a polar bear
+entity_mask_to_tokens:
+- - 2
+- - 5
+- - 8
+  - 9
+entity_token_weights:
+- - 2
+- - 3
+- - 2
+  - 2
+
+fe_attn_t: 0.5
+fe_f_t: 1
+fe_cross_attn_reg_t: 1
+fe_cross_attn_guid_t: 0.2
+
+guidance_scale: 15
+n_timesteps: 50
+negative_prompt: ugly, blurry, black, low res, unrealistic, bad hand, bad feet, multiple
+  hand
+sd_version: '2.1'
+seed: 3
+
+output_path: output
+
+

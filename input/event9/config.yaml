@@ -1,0 +1,33 @@
+device: cuda
+
+event: event9
+
+entity: 4
+prompt: a spiderman, a robot, a bear, a monkey
+entity_mask_to_tokens:
+- - 2
+- - 5
+- - 8
+- - 11
+entity_token_weights:
+- - 4
+- - 2
+- - 2
+- - 2
+
+
+fe_attn_t: 0.5
+fe_f_t: 1
+fe_cross_attn_reg_t: 1
+fe_cross_attn_guid_t: 0.2
+
+guidance_scale: 15
+n_timesteps: 50
+negative_prompt: ugly, blurry, black, low res, unrealistic, bad hand, bad feet, multiple
+  hand
+sd_version: '2.1'
+seed: 4
+
+output_path: output
+
+
