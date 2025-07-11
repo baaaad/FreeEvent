@@ -68,12 +68,12 @@ prompt: "a Jedi, a lightsaber"            # Target entity
 
 # Entity attention control
 entity_mask_to_tokens: 
-- - 2                                # Token ind for mask0.png
-- - 5                                # Token ind for mask1.png
+- - 2                                # Token ind for mask0
+- - 5                                # Token ind for mask1
   
 entity_token_weights:
-- - 1                                  # Weight for dog token
-- - 1                                  # Weight for cat token
+- - 1                                  # Weight for mask0 token
+- - 1                                  # Weight for mask1 token
 
 # Hyperparameters (default values shown)
 guidance_scale: 15
